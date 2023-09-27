@@ -10,3 +10,8 @@ jobs:
         node-version: '14'
     - run: npm install -g bats
     - run: bats -v
+    - name: testing 
+      run: | 
+        echo "Test message inside runner" 
+        echo "uptime"
+        uptime 
